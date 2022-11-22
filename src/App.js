@@ -12,6 +12,7 @@ import "./App.css";
 import CreateStudent from "./components/create-student.component";
 import EditStudent from "./components/edit-student.component";
 import StudentList from "./components/student-list.component";
+import logo from "..//src/assets/q.png"
 
 
 function App() {
@@ -26,6 +27,10 @@ function App() {
                   Inicio
                 </Link>
               </Navbar.Brand>
+
+              <div>
+                <img src={logo}></img>
+              </div>
 
               <Nav className="justify-content-end">
                 <Nav>
