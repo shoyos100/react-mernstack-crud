@@ -83,7 +83,7 @@ export default class CreateStudent extends Component {
             type="submit"
             className="mt-4"
           >
-            Crear Estudiantes
+            Crear Empleado
           </Button>
         </Form>
       </div>
