@@ -21,9 +21,9 @@ function App() {
       <Router>
         <header className="App-header">
           <Navbar bg="dark" variant="dark">
-            <Container>
+            <Container > 
               <Navbar.Brand>
-                <Link to={"/create-student"} className="nav-link">
+                <Link to={"/"} className="nav-link">
                   Inicio
                 </Link>
               </Navbar.Brand>
@@ -33,23 +33,23 @@ function App() {
               </div>
 
               <Nav className="justify-content-end">
-                <Nav>
+                <Navbar.Brand>
                   <Link to={"/create-student"} className="nav-link">
                     Crear Empleado
                   </Link>
-                </Nav>
+                </Navbar.Brand>
 
-                <Nav>
+                <Navbar.Brand>
                   <Link to={"/student-list"} className="nav-link">
                     Listar Empleado
                   </Link>
-                </Nav>
+                </Navbar.Brand>
               </Nav>
             </Container>
           </Navbar>
         </header>
 
-        <Container>
+        <Container  >
           <Row>
             <Col md={12}>
               <div className="wrapper">
@@ -74,6 +74,7 @@ function App() {
                     path="/student-list"
                     component={(props) => <StudentList {...props} />}
                   />
+                  
                 
                 </Switch>
               </div>

@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 import axios from "axios";
+import fondo1 from "..//assets/3.jpg"
 
 
 export default class CreateStudent extends Component {
@@ -48,45 +49,54 @@ export default class CreateStudent extends Component {
 
   render() {
     return (
-       
       
-      <div class="form-wrapper">
-        <Form onSubmit={this.onSubmit}>
-          <Form.Group controlId="Name">
-            <Form.Label>Nombre del empleado</Form.Label>
-            <Form.Control
-              type="text"
-              value={this.state.name}
-              onChange={this.onChangeStudentName}
-            />
-          </Form.Group>
-          <Form.Group controlId="Email">
-            <Form.Label>Correo Electrónico</Form.Label>
-            <Form.Control
-              type="email"
-              value={this.state.email}
-              onChange={this.onChangeStudentEmail}
-            />
-          </Form.Group>
-          <Form.Group controlId="Rollno">
-            <Form.Label>Código</Form.Label>
-            <Form.Control
-              type="text"
-              value={this.state.rollno}
-              onChange={this.onChangeStudentRollno}
-            />
-          </Form.Group>
-          <Button
-            variant="danger"
-            size="lg"
-            block="block"
-            type="submit"
-            className="mt-4"
-          >
-            Crear Empleado
-          </Button>
-        </Form>
-      </div>
-      );
+      
+        <div class="form-wrapper">
+          <Form onSubmit={this.onSubmit}>
+            <Form.Group controlId="Name">
+              <Form.Label>Nombre del empleado</Form.Label>
+              <Form.Control
+                type="text"
+                value={this.state.name}
+                onChange={this.onChangeStudentName}
+              />
+            </Form.Group>
+            <Form.Group controlId="Email">
+              <Form.Label>Correo Electrónico</Form.Label>
+              <Form.Control
+                type="email"
+                value={this.state.email}
+                onChange={this.onChangeStudentEmail}
+              />
+            </Form.Group>
+            <Form.Group controlId="Rollno">
+              <Form.Label>Código</Form.Label>
+              <Form.Control
+                type="text"
+                value={this.state.rollno}
+                onChange={this.onChangeStudentRollno}
+              />
+            </Form.Group>
+            <Button
+              variant="danger"
+              size="lg"
+              block="block"
+              type="submit"
+              className="mt-4"
+            >
+              Crear Empleado
+            </Button>
+            <p></p>
+
+            <div>
+              
+            </div>
+            
+            
+          </Form>
+        </div>
+        
+      
+    );
   }
 }
